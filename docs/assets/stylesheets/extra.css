@@ -1,24 +1,112 @@
-/* Extra styles to approximate Crafters Island look */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+/* Remove white/blurred nav title background in sidebar */
+.md-nav__title {
+  background: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  color: var(--ci-primary-100) !important;
+}
+/* Crafters Island custom theme for MkDocs Material */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap');
 
 html {
-  --ci-primary: #0b74de; /* crafters-like blue */
-  --ci-accent: #ffb400;  /* warm accent */
+  --ci-primary-50: #e6f0ff;
+  --ci-primary-100: #b3d1ff;
+  --ci-primary-200: #80b3ff;
+  --ci-primary-300: #4d94ff;
+  --ci-primary-400: #1a75ff;
+  --ci-primary-500: #0052cc;
+  --ci-primary-600: #003d99;
+  --ci-primary-700: #002966;
+  --ci-primary-800: #001433;
+  --ci-primary-900: #000000;
+  --ci-accent: #ffb400;
+  --ci-bg-gradient: linear-gradient(135deg, var(--ci-primary-900) 0%, var(--ci-primary-800) 100%);
+  --md-default-font-family: 'Geist', 'Roboto', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--ci-bg-gradient);
+  color: var(--ci-primary-100);
+}
+
+body {
+  font-family: var(--md-default-font-family);
+  background: var(--ci-bg-gradient);
+  color: var(--ci-primary-100);
 }
 
 .md-header {
-  background-color: var(--ci-primary);
-  color: white;
+  background: linear-gradient(90deg, var(--ci-primary-900) 0%, var(--ci-primary-800) 100%);
+  color: var(--ci-primary-100);
+  border-bottom: 2px solid var(--ci-primary-400);
+  box-shadow: 0 2px 8px 0 rgba(26,117,255,0.08);
 }
 
 .md-header .md-logo {
-  filter: brightness(0) invert(1);
+  filter: none;
+  background: linear-gradient(90deg, var(--ci-primary-200), var(--ci-primary-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 a, .md-nav__link, .md-footer a {
-  color: var(--ci-primary);
+  color: var(--ci-primary-200);
+  transition: color 0.2s;
+}
+a:hover, .md-nav__link:hover, .md-footer a:hover {
+  color: var(--ci-accent);
 }
 
-html {
-  --md-default-font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+.md-footer {
+  background: var(--ci-primary-800);
+  color: var(--ci-primary-100);
+  border-top: 1px solid var(--ci-primary-700);
+}
+
+.ci-footer-links {
+  text-align: center;
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.1em;
+}
+.ci-footer-links a {
+  color: var(--ci-primary-200);
+  margin: 0 0.5em;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.ci-footer-links a:hover {
+  color: var(--ci-accent);
+}
+
+/* Buttons and callouts */
+.md-typeset .md-button {
+  background: var(--ci-primary-400);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 8px 0 rgba(26,117,255,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.md-typeset .md-button:hover {
+  background: var(--ci-accent);
+  color: #222;
+}
+
+/* Card style for content blocks */
+.md-typeset .admonition, .md-typeset details {
+  background: var(--ci-primary-800);
+  border-left: 4px solid var(--ci-primary-400);
+  color: var(--ci-primary-100);
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px 0 rgba(26,117,255,0.04);
+}
+
+/* Headings with gradient */
+h1, h2, h3, h4, h5, h6 {
+  background: linear-gradient(90deg, var(--ci-primary-200), var(--ci-primary-400));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
