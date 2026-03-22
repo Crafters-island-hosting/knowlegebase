@@ -1,3 +1,28 @@
+/* Themed search bar */
+.md-search__form {
+  background: var(--ci-primary-800) !important;
+  border: 2px solid var(--ci-primary-400) !important;
+  border-radius: 0.75em !important;
+  box-shadow: 0 2px 8px 0 rgba(26,117,255,0.04);
+}
+.md-search__input {
+  background: transparent !important;
+  color: var(--ci-primary-100) !important;
+  font-family: var(--md-default-font-family);
+  border: none !important;
+}
+.md-search__input::placeholder {
+  color: var(--ci-primary-200) !important;
+  opacity: 1;
+}
+.md-search__form:focus-within {
+  border-color: var(--ci-accent) !important;
+  box-shadow: 0 0 0 2px var(--ci-accent);
+}
+.md-search__icon, .md-search__icon svg {
+  color: var(--ci-primary-200) !important;
+  fill: var(--ci-primary-200) !important;
+}
 /* Remove white/blurred nav title background in sidebar */
 .md-nav__title {
   background: none !important;
