@@ -1,3 +1,29 @@
+/* Themed search bar results dropdown */
+.md-search__output {
+  background: var(--ci-primary-900) !important;
+  color: var(--ci-primary-100) !important;
+  border: 1.5px solid var(--ci-primary-700) !important;
+  box-shadow: 0 4px 24px 0 rgba(26,117,255,0.10);
+}
+.md-search__suggest {
+  background: var(--ci-primary-800) !important;
+  color: var(--ci-primary-100) !important;
+}
+.md-search__result {
+  background: transparent !important;
+  color: var(--ci-primary-100) !important;
+  border-radius: 0.5em;
+  transition: background 0.2s, color 0.2s;
+}
+.md-search__result:hover, .md-search__result--active {
+  background: var(--ci-primary-700) !important;
+  color: var(--ci-accent) !important;
+}
+.md-search__result mark {
+  background: none !important;
+  color: var(--ci-primary-200) !important;
+  font-weight: bold;
+}
 /* Themed search bar */
 .md-search__form {
   background: var(--ci-primary-800) !important;
@@ -44,7 +70,7 @@ html {
   --ci-primary-700: #002966;
   --ci-primary-800: #001433;
   --ci-primary-900: #000000;
-  --ci-accent: #ffb400;
+  --ci-accent: #fff;
   --ci-bg-gradient: linear-gradient(135deg, var(--ci-primary-900) 0%, var(--ci-primary-800) 100%);
   --md-default-font-family: 'Geist', 'Roboto', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   background: var(--ci-bg-gradient);
