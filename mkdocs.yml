@@ -20,9 +20,7 @@ theme:
     code: Roboto Mono
   features:
     - navigation.instant
-    - navigation.tabs
     - navigation.sections
-    - navigation.top
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -41,3 +39,31 @@ plugins:
       minify_html: true
   - glightbox
   - redirects
+
+# Custom footer links for Material theme
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/JY2NtBc8yG
+      name: Support Server
+    - icon: fontawesome/solid/globe
+      link: https://crafters-island.com
+      name: Main Site
+    - icon: fontawesome/solid/heart-pulse
+      link: https://panels-status.crafters-island.com/
+      name: Status Page
+    - icon: fontawesome/solid/file-contract
+      link: https://client.crafters-island.com/terms/tos
+      name: Terms of Service
+    - icon: fontawesome/solid/user-shield
+      link: https://client.crafters-island.com/terms/privacy
+      name: Privacy Policy
+  footer:
+    html: |
+      <div class="ci-footer-links">
+        <a href="https://crafters-island.com" target="_blank">Main site</a> |
+        <a href="https://discord.gg/JY2NtBc8yG" target="_blank">Support server</a> |
+        <a href="https://panels-status.crafters-island.com/" target="_blank">Status page</a> |
+        <a href="https://client.crafters-island.com/terms/tos" target="_blank">ToS</a> |
+        <a href="https://client.crafters-island.com/terms/privacy" target="_blank">Privacy Policy</a>
+      </div>
