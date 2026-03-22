@@ -1,3 +1,16 @@
+/* Remove white/grey from search results header and background */
+.md-search__output, .md-search__suggest, .md-search__result {
+  background: var(--ci-primary-900) !important;
+  color: var(--ci-primary-100) !important;
+}
+.md-search__suggest {
+  border-bottom: 1px solid var(--ci-primary-700) !important;
+  font-weight: 500;
+  color: var(--ci-primary-200) !important;
+}
+.md-search__result {
+  border-top: none !important;
+}
 /* Themed search bar results dropdown */
 .md-search__output {
   background: var(--ci-primary-900) !important;
