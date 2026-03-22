@@ -1,0 +1,23 @@
+site_name: Crafters Island — Knowledgebase
+site_description: Documentation and knowledge base for Crafters Island
+site_url: https://crafters-island.com
+repo_url: https://github.com/Crafters-island-hosting/knowlegebase
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+
+extra_css:
+  - assets/stylesheets/extra.css

@@ -1,0 +1,24 @@
+/* Extra styles to approximate Crafters Island look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+
+html {
+  --ci-primary: #0b74de; /* crafters-like blue */
+  --ci-accent: #ffb400;  /* warm accent */
+}
+
+.md-header {
+  background-color: var(--ci-primary);
+  color: white;
+}
+
+.md-header .md-logo {
+  filter: brightness(0) invert(1);
+}
+
+a, .md-nav__link, .md-footer a {
+  color: var(--ci-primary);
+}
+
+html {
+  --md-default-font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
