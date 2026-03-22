@@ -11,13 +11,33 @@ theme:
   favicon: assets/images/logo.png
   palette:
     - scheme: default
-      primary: indigo
-      accent: amber
+      primary: 'custom'
+      primaryColor: '#0b74de'
+      accent: 'custom'
+      accentColor: '#ffb400'
   font:
     text: Roboto
     code: Roboto Mono
   features:
     - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.tabs.link
 
 extra_css:
   - assets/stylesheets/extra.css
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - minify:
+      minify_html: true
+  - glightbox
+  - redirects

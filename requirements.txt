@@ -1,2 +1,8 @@
 mkdocs>=1.5
 mkdocs-material>=9.0
+mkdocs-material-extensions
+mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-minify-plugin
+mkdocs-glightbox
+mkdocs-redirects
